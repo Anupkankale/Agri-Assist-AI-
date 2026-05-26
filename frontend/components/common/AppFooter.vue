@@ -11,10 +11,9 @@
         <p class="text-sm font-semibold uppercase tracking-[0.24em] text-wheat">Core Pages</p>
         <div class="mt-3 space-y-2 text-sm text-white/80">
           <NuxtLink to="/">Home</NuxtLink>
+          <NuxtLink to="/check">Check Eligibility</NuxtLink>
+          <NuxtLink to="/advisory">Advisory</NuxtLink>
           <NuxtLink to="/about">About</NuxtLink>
-          <NuxtLink to="/services">Services</NuxtLink>
-          <NuxtLink to="/solutions">Solutions</NuxtLink>
-          <NuxtLink to="/contact">Contact</NuxtLink>
         </div>
       </div>
       <div>

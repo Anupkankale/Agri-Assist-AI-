@@ -1,4 +1,4 @@
-export type MiddlewareKey = "auth" | "guest"
+export type MiddlewareKey = "validate-farmer"
 declare module 'nitropack' {
   interface NitroRouteConfig {
     appMiddleware?: MiddlewareKey | MiddlewareKey[] | Record<MiddlewareKey, boolean>

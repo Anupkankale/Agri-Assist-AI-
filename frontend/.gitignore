@@ -1,0 +1,7 @@
+Handover.md
+node_modules
+.nuxt
+.output
+dist
+.env
+.DS_Store

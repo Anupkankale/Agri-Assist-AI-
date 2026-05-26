@@ -1,18 +1,10 @@
 <script setup lang="ts">
 const navigation = [
   { name: 'Home', to: '/' },
-  { name: 'About', to: '/about' },
-  { name: 'Services', to: '/services' },
-  { name: 'Solutions', to: '/solutions' },
-  { name: 'Contact', to: '/contact' }
+  { name: 'Check Eligibility', to: '/check' },
+  { name: 'Advisory', to: '/advisory' },
+  { name: 'About', to: '/about' }
 ]
-
-const { isLoggedIn, logout } = useAuth()
-
-const handleLogout = async () => {
-  logout()
-  await navigateTo('/login')
-}
 </script>
 
 <template>
@@ -41,26 +33,11 @@ const handleLogout = async () => {
 
       <div class="flex items-center gap-3">
         <NuxtLink
-          v-if="!isLoggedIn"
-          to="/login"
-          class="rounded-full border border-moss/20 px-4 py-2 text-sm font-semibold text-moss transition hover:border-moss hover:bg-moss hover:text-white"
+          to="/check"
+          class="rounded-full bg-moss px-4 py-2 text-sm font-semibold text-white transition hover:bg-night"
         >
-          Login
+          Get Started
         </NuxtLink>
-        <template v-else>
-          <NuxtLink
-            to="/dashboard"
-            class="rounded-full bg-moss px-4 py-2 text-sm font-semibold text-white transition hover:bg-night"
-          >
-            Dashboard
-          </NuxtLink>
-          <button
-            class="rounded-full border border-slate-300 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:border-slate-400"
-            @click="handleLogout"
-          >
-            Logout
-          </button>
-        </template>
       </div>
     </div>
   </header>

@@ -14,10 +14,19 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 
-export const AppFooter: typeof import("../components/AppFooter.vue")['default']
-export const AppHeader: typeof import("../components/AppHeader.vue")['default']
-export const HeroPanel: typeof import("../components/HeroPanel.vue")['default']
-export const StatCard: typeof import("../components/StatCard.vue")['default']
+export const AdvisoryCropTip: typeof import("../components/advisory/CropTip.vue")['default']
+export const AdvisoryWeatherCard: typeof import("../components/advisory/WeatherCard.vue")['default']
+export const CommonAppFooter: typeof import("../components/common/AppFooter.vue")['default']
+export const CommonAppHeader: typeof import("../components/common/AppHeader.vue")['default']
+export const CommonLoadingSpinner: typeof import("../components/common/LoadingSpinner.vue")['default']
+export const FarmerCropSelector: typeof import("../components/farmer/CropSelector.vue")['default']
+export const FarmerProfileForm: typeof import("../components/farmer/FarmerProfileForm.vue")['default']
+export const FarmerLocationPicker: typeof import("../components/farmer/LocationPicker.vue")['default']
+export const SchemesDocumentChecklist: typeof import("../components/schemes/DocumentChecklist.vue")['default']
+export const SchemesEligibilityBadge: typeof import("../components/schemes/EligibilityBadge.vue")['default']
+export const SchemesSchemeCard: typeof import("../components/schemes/SchemeCard.vue")['default']
+export const SchemesSchemeDetail: typeof import("../components/schemes/SchemeDetail.vue")['default']
+export const SchemesSchemeGrid: typeof import("../components/schemes/SchemeGrid.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -41,10 +50,19 @@ export const Head: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Html']
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
-export const LazyAppFooter: LazyComponent<typeof import("../components/AppFooter.vue")['default']>
-export const LazyAppHeader: LazyComponent<typeof import("../components/AppHeader.vue")['default']>
-export const LazyHeroPanel: LazyComponent<typeof import("../components/HeroPanel.vue")['default']>
-export const LazyStatCard: LazyComponent<typeof import("../components/StatCard.vue")['default']>
+export const LazyAdvisoryCropTip: LazyComponent<typeof import("../components/advisory/CropTip.vue")['default']>
+export const LazyAdvisoryWeatherCard: LazyComponent<typeof import("../components/advisory/WeatherCard.vue")['default']>
+export const LazyCommonAppFooter: LazyComponent<typeof import("../components/common/AppFooter.vue")['default']>
+export const LazyCommonAppHeader: LazyComponent<typeof import("../components/common/AppHeader.vue")['default']>
+export const LazyCommonLoadingSpinner: LazyComponent<typeof import("../components/common/LoadingSpinner.vue")['default']>
+export const LazyFarmerCropSelector: LazyComponent<typeof import("../components/farmer/CropSelector.vue")['default']>
+export const LazyFarmerProfileForm: LazyComponent<typeof import("../components/farmer/FarmerProfileForm.vue")['default']>
+export const LazyFarmerLocationPicker: LazyComponent<typeof import("../components/farmer/LocationPicker.vue")['default']>
+export const LazySchemesDocumentChecklist: LazyComponent<typeof import("../components/schemes/DocumentChecklist.vue")['default']>
+export const LazySchemesEligibilityBadge: LazyComponent<typeof import("../components/schemes/EligibilityBadge.vue")['default']>
+export const LazySchemesSchemeCard: LazyComponent<typeof import("../components/schemes/SchemeCard.vue")['default']>
+export const LazySchemesSchemeDetail: LazyComponent<typeof import("../components/schemes/SchemeDetail.vue")['default']>
+export const LazySchemesSchemeGrid: LazyComponent<typeof import("../components/schemes/SchemeGrid.vue")['default']>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
 export const LazyNuxtLayout: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
 export const LazyNuxtErrorBoundary: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>

@@ -30,5 +30,10 @@ export { requestIdleCallback, cancelIdleCallback } from '#app/compat/idle-callba
 export { setInterval } from '#app/compat/interval';
 export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composables';
 export { defineLazyHydrationComponent } from '#app/composables/lazy-hydration';
-export { useAuth } from '../composables/useAuth';
+export { useEligibility } from '../composables/useEligibility';
+export { useFarmerProfile } from '../composables/useFarmerProfile';
+export { useSchemes } from '../composables/useSchemes';
+export { useWeather } from '../composables/useWeather';
+export { indianCrops } from '../utils/cropList';
+export { formatSchemeResponse } from '../utils/formatScheme';
 export { useNuxtDevTools } from '../node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';

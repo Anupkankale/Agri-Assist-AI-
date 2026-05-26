@@ -14,10 +14,19 @@ type HydrationStrategies = {
 type LazyComponent<T> = DefineComponent<HydrationStrategies, {}, {}, {}, {}, {}, {}, { hydrated: () => void }> & T
 
 interface _GlobalComponents {
-  AppFooter: typeof import("../../components/AppFooter.vue")['default']
-  AppHeader: typeof import("../../components/AppHeader.vue")['default']
-  HeroPanel: typeof import("../../components/HeroPanel.vue")['default']
-  StatCard: typeof import("../../components/StatCard.vue")['default']
+  AdvisoryCropTip: typeof import("../../components/advisory/CropTip.vue")['default']
+  AdvisoryWeatherCard: typeof import("../../components/advisory/WeatherCard.vue")['default']
+  CommonAppFooter: typeof import("../../components/common/AppFooter.vue")['default']
+  CommonAppHeader: typeof import("../../components/common/AppHeader.vue")['default']
+  CommonLoadingSpinner: typeof import("../../components/common/LoadingSpinner.vue")['default']
+  FarmerCropSelector: typeof import("../../components/farmer/CropSelector.vue")['default']
+  FarmerProfileForm: typeof import("../../components/farmer/FarmerProfileForm.vue")['default']
+  FarmerLocationPicker: typeof import("../../components/farmer/LocationPicker.vue")['default']
+  SchemesDocumentChecklist: typeof import("../../components/schemes/DocumentChecklist.vue")['default']
+  SchemesEligibilityBadge: typeof import("../../components/schemes/EligibilityBadge.vue")['default']
+  SchemesSchemeCard: typeof import("../../components/schemes/SchemeCard.vue")['default']
+  SchemesSchemeDetail: typeof import("../../components/schemes/SchemeDetail.vue")['default']
+  SchemesSchemeGrid: typeof import("../../components/schemes/SchemeGrid.vue")['default']
   NuxtWelcome: typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']
   NuxtLayout: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
   NuxtErrorBoundary: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']
@@ -41,10 +50,19 @@ interface _GlobalComponents {
   Html: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Html']
   Body: typeof import("../../node_modules/nuxt/dist/head/runtime/components")['Body']
   NuxtIsland: typeof import("../../node_modules/nuxt/dist/app/components/nuxt-island")['default']
-  LazyAppFooter: LazyComponent<typeof import("../../components/AppFooter.vue")['default']>
-  LazyAppHeader: LazyComponent<typeof import("../../components/AppHeader.vue")['default']>
-  LazyHeroPanel: LazyComponent<typeof import("../../components/HeroPanel.vue")['default']>
-  LazyStatCard: LazyComponent<typeof import("../../components/StatCard.vue")['default']>
+  LazyAdvisoryCropTip: LazyComponent<typeof import("../../components/advisory/CropTip.vue")['default']>
+  LazyAdvisoryWeatherCard: LazyComponent<typeof import("../../components/advisory/WeatherCard.vue")['default']>
+  LazyCommonAppFooter: LazyComponent<typeof import("../../components/common/AppFooter.vue")['default']>
+  LazyCommonAppHeader: LazyComponent<typeof import("../../components/common/AppHeader.vue")['default']>
+  LazyCommonLoadingSpinner: LazyComponent<typeof import("../../components/common/LoadingSpinner.vue")['default']>
+  LazyFarmerCropSelector: LazyComponent<typeof import("../../components/farmer/CropSelector.vue")['default']>
+  LazyFarmerProfileForm: LazyComponent<typeof import("../../components/farmer/FarmerProfileForm.vue")['default']>
+  LazyFarmerLocationPicker: LazyComponent<typeof import("../../components/farmer/LocationPicker.vue")['default']>
+  LazySchemesDocumentChecklist: LazyComponent<typeof import("../../components/schemes/DocumentChecklist.vue")['default']>
+  LazySchemesEligibilityBadge: LazyComponent<typeof import("../../components/schemes/EligibilityBadge.vue")['default']>
+  LazySchemesSchemeCard: LazyComponent<typeof import("../../components/schemes/SchemeCard.vue")['default']>
+  LazySchemesSchemeDetail: LazyComponent<typeof import("../../components/schemes/SchemeDetail.vue")['default']>
+  LazySchemesSchemeGrid: LazyComponent<typeof import("../../components/schemes/SchemeGrid.vue")['default']>
   LazyNuxtWelcome: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
   LazyNuxtLayout: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>
   LazyNuxtErrorBoundary: LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-error-boundary.vue")['default']>
