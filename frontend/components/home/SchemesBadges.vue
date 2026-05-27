@@ -16,7 +16,7 @@ const schemes = [
 </script>
 
 <template>
-  <section class="py-16 sm:py-24 overflow-hidden">
+  <section v-reveal class="py-16 sm:py-24 overflow-hidden">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="glass-card-thick p-12 sm:p-20 relative overflow-hidden">
         <div class="absolute inset-0 bg-gradient-to-br from-moss/20 to-wheat/10 -z-10"></div>

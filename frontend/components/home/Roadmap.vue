@@ -3,7 +3,7 @@ const { t } = useL10n();
 </script>
 
 <template>
-  <section class="py-16 sm:py-24">
+  <section v-reveal class="py-16 sm:py-24">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl text-center">
         <h2 class="text-3xl font-bold tracking-tight text-vibrant sm:text-4xl">{{ t('roadTitle') }}</h2>

@@ -25,6 +25,16 @@ export default defineNuxtPlugin((nuxtApp) => {
       unmounted(el) {
         observer.unobserve(el);
       },
+      getSSRProps() {
+        return {}
+      }
+    });
+  } else {
+    // For SSR, just register a no-op directive to prevent errors
+    nuxtApp.vueApp.directive('reveal', {
+      getSSRProps() {
+        return {}
+      }
     });
   }
 });

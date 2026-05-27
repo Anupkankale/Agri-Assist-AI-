@@ -33,7 +33,7 @@ const steps = computed(() => [
 </script>
 
 <template>
-  <section class="section-padding section-vibrant">
+  <section v-reveal class="section-padding section-vibrant">
     <div class="container-tight relative">
       <div class="mx-auto max-w-2xl text-center mb-20">
         <h2 class="text-3xl font-bold sm:text-4xl text-vibrant">{{ t('howTitle') }}</h2>

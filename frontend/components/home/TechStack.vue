@@ -3,7 +3,7 @@ const { t } = useL10n();
 </script>
 
 <template>
-  <section class="section-padding">
+  <section v-reveal class="section-padding">
     <div class="container-tight">
       <div class="mx-auto max-w-2xl text-center">
         <h2 class="text-3xl font-bold tracking-tight text-vibrant sm:text-4xl">{{ t('techTitle') }}</h2>
