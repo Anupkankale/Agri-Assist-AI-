@@ -6,14 +6,14 @@ export const useL10n = () => {
   const translations = {
     en: {
       // Hero
-      heroTitle: "Find every government scheme you qualify for —",
+      heroTitle: "Find every government scheme you qualify for",
       heroHighlight: "in 60 seconds",
-      heroSub: "AgriAssist AI checks 20+ central and state schemes for your crop, land size, and district — powered by Nemotron AI.",
+      heroSub: "AgriAssist AI checks 20+ central and state schemes for your crop, land size, and district. Powered by Advanced AI.",
       cta: "Check my eligibility →",
       demo: "Watch demo",
       phase: "Phase 1 Live",
       news: "What's new",
-      bottomCta: "Your schemes are waiting — check in 60 seconds",
+      bottomCta: "Your schemes are waiting. Check in 60 seconds",
       bottomSub: "Stop leaving money on the table. Join 5,000+ farmers using AgriAssist AI.",
 
       // Problem Stats
@@ -33,11 +33,11 @@ export const useL10n = () => {
       howTitle: "How it works",
       howSub: "Get your personalized eligibility report in three simple steps.",
       how1Title: "Enter your farm profile",
-      how1Sub: "Crop type, land size, district, and income — takes less than 60 seconds.",
+      how1Sub: "Crop type, land size, district, and income. Takes less than 60 seconds.",
       how2Title: "AI checks 20+ schemes",
-      how2Sub: "Nemotron AI reads official govt PDFs and matches your profile in real-time.",
+      how2Sub: "Advanced AI reads official govt PDFs and matches your profile in real-time.",
       how3Title: "Get your report",
-      how3Sub: "See schemes, documents needed, and application links — all in one printable checklist.",
+      how3Sub: "See schemes, documents needed, and application links. All in one printable checklist.",
 
       // Features
       featTitle: "Comprehensive Support",
@@ -82,14 +82,14 @@ export const useL10n = () => {
     },
     mr: {
       // Hero
-      heroTitle: "तुम्ही पात्र असलेल्या सर्व सरकारी योजना शोधा —",
+      heroTitle: "तुम्ही पात्र असलेल्या सर्व सरकारी योजना शोधा",
       heroHighlight: "६० सेकंदात",
-      heroSub: "AgriAssist AI तुमच्या पिकासाठी, जमिनीच्या आकारासाठी आणि जिल्ह्यासाठी २०+ केंद्र आणि राज्य योजना तपासते — Nemotron AI द्वारे समर्थित.",
+      heroSub: "AgriAssist AI तुमच्या पिकासाठी, जमिनीच्या आकारासाठी आणि जिल्ह्यासाठी २०+ केंद्र आणि राज्य योजना तपासते. प्रगत AI द्वारे समर्थित.",
       cta: "माझी पात्रता तपासा →",
       demo: "डेमो पहा",
       phase: "फेज १ लाईव्ह",
       news: "नवीन काय आहे",
-      bottomCta: "तुमच्या योजना तुमची वाट पाहत आहेत — ६० सेकंदात तपासा",
+      bottomCta: "तुमच्या योजना तुमची वाट पाहत आहेत. ६० सेकंदात तपासा",
       bottomSub: "मिळणारा फायदा सोडू नका. AgriAssist AI वापरणाऱ्या ५,०००+ शेतकऱ्यांमध्ये सामील व्हा.",
 
       // Problem Stats
@@ -109,11 +109,11 @@ export const useL10n = () => {
       howTitle: "हे कसे कार्य करते",
       howSub: "तीन सोप्या चरणांमध्ये तुमचा वैयक्तिक पात्रता अहवाल मिळवा.",
       how1Title: "तुमची शेती माहिती भरा",
-      how1Sub: "पिकाचा प्रकार, जमिनीचा आकार, जिल्हा आणि उत्पन्न — ६० सेकंदांपेक्षा कमी वेळ लागतो.",
+      how1Sub: "पिकाचा प्रकार, जमिनीचा आकार, जिल्हा आणि उत्पन्न. ६० सेकंदांपेक्षा कमी वेळ लागतो.",
       how2Title: "AI २०+ योजना तपासते",
-      how2Sub: "Nemotron AI अधिकृत सरकारी PDF वाचते आणि तुमच्या माहितीशी जुळवते.",
+      how2Sub: "प्रगत AI अधिकृत सरकारी PDF वाचते आणि तुमच्या माहितीशी जुळवते.",
       how3Title: "तुमचा अहवाल मिळवा",
-      how3Sub: "योजना, आवश्यक कागदपत्रे आणि अर्जाच्या लिंक्स पहा — सर्व एकाच चेकलिस्टमध्ये.",
+      how3Sub: "योजना, आवश्यक कागदपत्रे आणि अर्जाच्या लिंक्स पहा. सर्व एकाच चेकलिस्टमध्ये.",
 
       // Features
       featTitle: "सर्वसमावेशक मदत",
@@ -158,14 +158,14 @@ export const useL10n = () => {
     },
     hi: {
       // Hero
-      heroTitle: "उन सभी सरकारी योजनाओं को खोजें जिनके लिए आप पात्र हैं —",
+      heroTitle: "उन सभी सरकारी योजनाओं को खोजें जिनके लिए आप पात्र हैं",
       heroHighlight: "६० सेकंड में",
-      heroSub: "AgriAssist AI आपकी फसल, भूमि के आकार और जिले के लिए २०+ केंद्रीय और राज्य योजनाओं की जांच करता है — Nemotron AI द्वारा संचालित।",
+      heroSub: "AgriAssist AI आपकी फसल, भूमि के आकार और जिले के लिए २०+ केंद्रीय और राज्य योजनाओं की जांच करता है। प्रगत AI द्वारा संचालित।",
       cta: "मेरी पात्रता जांचें →",
       demo: "डेमो देखें",
       phase: "फेज १ लाइव",
       news: "नया क्या है",
-      bottomCta: "आपकी योजनाएं प्रतीक्षा कर रही हैं — ६० सेकंड में जांचें",
+      bottomCta: "आपकी योजनाएं प्रतीक्षा कर रही हैं. ६० सेकंड में जांचें",
       bottomSub: "अपना लाभ न खोएं। AgriAssist AI का उपयोग करने वाले ५,०००+ किसानों में शामिल हों।",
 
       // Problem Stats
@@ -185,11 +185,11 @@ export const useL10n = () => {
       howTitle: "यह कैसे काम करता है",
       howSub: "तीन आसान चरणों में अपनी व्यक्तिगत पात्रता रिपोर्ट प्राप्त करें।",
       how1Title: "अपनी खेती की जानकारी भरें",
-      how1Sub: "फसल का प्रकार, भूमि का आकार, जिला और आय — ६० सेकंड से भी कम समय लगता है।",
+      how1Sub: "फसल का प्रकार, भूमि का आकार, जिला और आय. ६० सेकंड से भी कम समय लगता है।",
       how2Title: "AI २०+ योजनाओं की जांच करता है",
-      how2Sub: "Nemotron AI आधिकारिक सरकारी PDF पढ़ता है और आपकी जानकारी से मेल खाता है।",
+      how2Sub: "प्रगत AI आधिकारिक सरकारी PDF पढ़ता है और आपकी जानकारी से मेल खाता है।",
       how3Title: "अपनी रिपोर्ट प्राप्त करें",
-      how3Sub: "योजनाएं, आवश्यक दस्तावेज और आवेदन लिंक देखें — सभी एक ही चेकलिस्ट में।",
+      how3Sub: "योजनाएं, आवश्यक दस्तावेज और आवेदन लिंक देखें. सभी एक ही चेकलिस्ट में।",
 
       // Features
       featTitle: "व्यापक सहायता",

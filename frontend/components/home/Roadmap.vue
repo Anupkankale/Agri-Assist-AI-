@@ -11,7 +11,7 @@ const { t } = useL10n();
           {{ t('roadSub') }}
         </p>
       </div>
-      <div class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-3">
+      <div v-reveal.stagger class="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-3">
         <div class="glass-card p-10 relative overflow-hidden group">
           <div class="absolute top-0 right-0 p-4">
              <span class="inline-flex items-center rounded-md bg-green-500/20 px-2 py-1 text-xs font-medium text-green-300 ring-1 ring-inset ring-green-500/30">{{ t('phase') }} ✓</span>

@@ -9,10 +9,7 @@
           <span class="font-display text-xl font-bold">AgriAssist AI</span>
         </div>
         <p class="mt-4 text-sm leading-6 text-white/70">
-          Find every government scheme you qualify for in 60 seconds. Powered by Nemotron AI.
-        </p>
-        <p class="mt-6 text-xs font-medium text-wheat/60 uppercase tracking-widest">
-          Built for Nemotron Contest 2026
+          Find every government scheme you qualify for in 60 seconds. Powered by Advanced NVIDIA AI.
         </p>
       </div>
       <div>
@@ -42,7 +39,7 @@
     </div>
     <div class="mx-auto max-w-7xl px-6 py-8 border-t border-white/5 lg:px-8">
       <p class="text-xs text-white/40 text-center">
-        &copy; 2026 AgriAssist AI. All rights reserved. Precision Farming Hub, India.
+        &copy; 2026 AgriAssist AI. Made with ❤️ for the <a href="https://anupkankale.com" target="_blank" class="text-wheat/60 hover:text-wheat transition-colors font-medium">anupkankale</a>. All rights reserved. Precision Farming Hub, India.
       </p>
     </div>
   </footer>

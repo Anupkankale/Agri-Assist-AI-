@@ -28,6 +28,7 @@ interface _GlobalComponents {
   HomeRoadmap: typeof import("../../components/home/Roadmap.vue")['default']
   HomeSchemesBadges: typeof import("../../components/home/SchemesBadges.vue")['default']
   HomeTechStack: typeof import("../../components/home/TechStack.vue")['default']
+  HomeUserFlow: typeof import("../../components/home/UserFlow.vue")['default']
   SchemesDocumentChecklist: typeof import("../../components/schemes/DocumentChecklist.vue")['default']
   SchemesEligibilityBadge: typeof import("../../components/schemes/EligibilityBadge.vue")['default']
   SchemesSchemeCard: typeof import("../../components/schemes/SchemeCard.vue")['default']
@@ -70,6 +71,7 @@ interface _GlobalComponents {
   LazyHomeRoadmap: LazyComponent<typeof import("../../components/home/Roadmap.vue")['default']>
   LazyHomeSchemesBadges: LazyComponent<typeof import("../../components/home/SchemesBadges.vue")['default']>
   LazyHomeTechStack: LazyComponent<typeof import("../../components/home/TechStack.vue")['default']>
+  LazyHomeUserFlow: LazyComponent<typeof import("../../components/home/UserFlow.vue")['default']>
   LazySchemesDocumentChecklist: LazyComponent<typeof import("../../components/schemes/DocumentChecklist.vue")['default']>
   LazySchemesEligibilityBadge: LazyComponent<typeof import("../../components/schemes/EligibilityBadge.vue")['default']>
   LazySchemesSchemeCard: LazyComponent<typeof import("../../components/schemes/SchemeCard.vue")['default']>

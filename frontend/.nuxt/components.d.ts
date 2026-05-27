@@ -28,6 +28,7 @@ export const HomeProblemStats: typeof import("../components/home/ProblemStats.vu
 export const HomeRoadmap: typeof import("../components/home/Roadmap.vue")['default']
 export const HomeSchemesBadges: typeof import("../components/home/SchemesBadges.vue")['default']
 export const HomeTechStack: typeof import("../components/home/TechStack.vue")['default']
+export const HomeUserFlow: typeof import("../components/home/UserFlow.vue")['default']
 export const SchemesDocumentChecklist: typeof import("../components/schemes/DocumentChecklist.vue")['default']
 export const SchemesEligibilityBadge: typeof import("../components/schemes/EligibilityBadge.vue")['default']
 export const SchemesSchemeCard: typeof import("../components/schemes/SchemeCard.vue")['default']
@@ -70,6 +71,7 @@ export const LazyHomeProblemStats: LazyComponent<typeof import("../components/ho
 export const LazyHomeRoadmap: LazyComponent<typeof import("../components/home/Roadmap.vue")['default']>
 export const LazyHomeSchemesBadges: LazyComponent<typeof import("../components/home/SchemesBadges.vue")['default']>
 export const LazyHomeTechStack: LazyComponent<typeof import("../components/home/TechStack.vue")['default']>
+export const LazyHomeUserFlow: LazyComponent<typeof import("../components/home/UserFlow.vue")['default']>
 export const LazySchemesDocumentChecklist: LazyComponent<typeof import("../components/schemes/DocumentChecklist.vue")['default']>
 export const LazySchemesEligibilityBadge: LazyComponent<typeof import("../components/schemes/EligibilityBadge.vue")['default']>
 export const LazySchemesSchemeCard: LazyComponent<typeof import("../components/schemes/SchemeCard.vue")['default']>
