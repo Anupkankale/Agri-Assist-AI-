@@ -22,6 +22,12 @@ interface _GlobalComponents {
   FarmerCropSelector: typeof import("../../components/farmer/CropSelector.vue")['default']
   FarmerProfileForm: typeof import("../../components/farmer/FarmerProfileForm.vue")['default']
   FarmerLocationPicker: typeof import("../../components/farmer/LocationPicker.vue")['default']
+  HomeFeatureGrid: typeof import("../../components/home/FeatureGrid.vue")['default']
+  HomeHowItWorks: typeof import("../../components/home/HowItWorks.vue")['default']
+  HomeProblemStats: typeof import("../../components/home/ProblemStats.vue")['default']
+  HomeRoadmap: typeof import("../../components/home/Roadmap.vue")['default']
+  HomeSchemesBadges: typeof import("../../components/home/SchemesBadges.vue")['default']
+  HomeTechStack: typeof import("../../components/home/TechStack.vue")['default']
   SchemesDocumentChecklist: typeof import("../../components/schemes/DocumentChecklist.vue")['default']
   SchemesEligibilityBadge: typeof import("../../components/schemes/EligibilityBadge.vue")['default']
   SchemesSchemeCard: typeof import("../../components/schemes/SchemeCard.vue")['default']
@@ -58,6 +64,12 @@ interface _GlobalComponents {
   LazyFarmerCropSelector: LazyComponent<typeof import("../../components/farmer/CropSelector.vue")['default']>
   LazyFarmerProfileForm: LazyComponent<typeof import("../../components/farmer/FarmerProfileForm.vue")['default']>
   LazyFarmerLocationPicker: LazyComponent<typeof import("../../components/farmer/LocationPicker.vue")['default']>
+  LazyHomeFeatureGrid: LazyComponent<typeof import("../../components/home/FeatureGrid.vue")['default']>
+  LazyHomeHowItWorks: LazyComponent<typeof import("../../components/home/HowItWorks.vue")['default']>
+  LazyHomeProblemStats: LazyComponent<typeof import("../../components/home/ProblemStats.vue")['default']>
+  LazyHomeRoadmap: LazyComponent<typeof import("../../components/home/Roadmap.vue")['default']>
+  LazyHomeSchemesBadges: LazyComponent<typeof import("../../components/home/SchemesBadges.vue")['default']>
+  LazyHomeTechStack: LazyComponent<typeof import("../../components/home/TechStack.vue")['default']>
   LazySchemesDocumentChecklist: LazyComponent<typeof import("../../components/schemes/DocumentChecklist.vue")['default']>
   LazySchemesEligibilityBadge: LazyComponent<typeof import("../../components/schemes/EligibilityBadge.vue")['default']>
   LazySchemesSchemeCard: LazyComponent<typeof import("../../components/schemes/SchemeCard.vue")['default']>

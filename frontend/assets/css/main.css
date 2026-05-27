@@ -3,32 +3,113 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: light;
-  --page-bg: #f5f1e8;
-  --surface: rgba(255, 255, 255, 0.82);
-  --surface-strong: #ffffff;
-  --text-main: #17301f;
-  --text-muted: #587160;
-  --border-soft: rgba(53, 91, 63, 0.14);
+  color-scheme: dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 html,
 body,
 #__nuxt {
   min-height: 100%;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
-  font-family: "Manrope", "Segoe UI", sans-serif;
-  color: var(--text-main);
-  background:
-    radial-gradient(circle at top left, rgba(230, 200, 120, 0.4), transparent 30%),
-    radial-gradient(circle at right, rgba(108, 154, 77, 0.24), transparent 26%),
-    linear-gradient(180deg, #f7f4ea 0%, #eef4e8 100%);
+  font-family: "Poppins", "SF Pro Text", system-ui, sans-serif;
+  color: #ffffff;
+  background: 
+    radial-gradient(circle at 0% 0%, #1a3a2a 0%, transparent 40%),
+    radial-gradient(circle at 100% 0%, #2c5035 0%, transparent 40%),
+    radial-gradient(circle at 50% 100%, #14281d 0%, transparent 50%),
+    #0a1410;
+  background-attachment: fixed;
+}
+
+/* Subtle Noise Texture for Glass */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.03;
+  pointer-events: none;
+  z-index: 9999;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-3xl border border-white/10 transition-all duration-500 ease-apple-ease;
+    border-radius: 1.5rem;
+    box-shadow: 
+      0 8px 32px 0 rgba(0, 0, 0, 0.3),
+      inset 0 1px 1px 0 rgba(255, 255, 255, 0.08);
+  }
+  
+  .glass-card:hover {
+    @apply border-white/20 bg-white/[0.08];
+    box-shadow: 
+      0 12px 48px 0 rgba(0, 0, 0, 0.4),
+      inset 0 1px 1px 0 rgba(255, 255, 255, 0.12);
+  }
+  
+  .glass-card-thick {
+    @apply bg-white/[0.12] backdrop-blur-[40px] border border-white/20;
+    border-radius: 1.5rem;
+    box-shadow: 
+      0 12px 40px 0 rgba(0, 0, 0, 0.4),
+      inset 0 1px 1px 0 rgba(255, 255, 255, 0.12);
+  }
+
+  .glass-button {
+    @apply relative overflow-hidden bg-white/10 backdrop-blur-md border border-white/10 px-6 py-3 rounded-full 
+           font-semibold text-white transition-all duration-300 ease-apple-ease hover:bg-white/20 hover:scale-[1.02] active:scale-95;
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-button-primary {
+    @apply glass-button bg-moss/40 border-moss/30 hover:bg-moss/60 hover:border-moss/40;
+  }
+
+  .text-vibrant {
+    @apply bg-gradient-to-br from-white via-white to-white/50 bg-clip-text text-transparent;
+    letter-spacing: -0.02em;
+  }
+
+  .section-padding {
+    @apply py-20 sm:py-28 lg:py-32;
+  }
+
+  .container-tight {
+    @apply mx-auto max-w-7xl px-6 lg:px-8;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-night-deep;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-white/10 rounded-full border-2 border-night-deep hover:bg-white/20 transition-colors;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+/* Typography Refinements */
+h1, h2, h3, h4 {
+  @apply font-display tracking-tight;
+}
+
+p {
+  @apply font-body leading-relaxed;
 }

@@ -32,6 +32,7 @@ export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composab
 export { defineLazyHydrationComponent } from '#app/composables/lazy-hydration';
 export { useEligibility } from '../composables/useEligibility';
 export { useFarmerProfile } from '../composables/useFarmerProfile';
+export { useL10n } from '../composables/useL10n';
 export { useSchemes } from '../composables/useSchemes';
 export { useWeather } from '../composables/useWeather';
 export { indianCrops } from '../utils/cropList';
