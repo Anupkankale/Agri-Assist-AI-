@@ -1,5 +1,8 @@
 <script setup lang="ts">
-const { t } = useL10n();
+const { t, locale } = useL10n();
+
+const titleLeading = computed(() => (locale.value === 'en' ? 'leading-tight' : 'leading-[1.3] sm:leading-[1.3]'));
+const subLeading = computed(() => (locale.value === 'en' ? 'leading-8' : 'leading-relaxed sm:leading-loose'));
 </script>
 
 <template>
@@ -19,10 +22,16 @@ const { t } = useL10n();
               </span>
             </a>
           </div>
-          <h1 class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl text-vibrant">
+          <h1 
+            class="mt-10 text-4xl font-bold tracking-tight text-white sm:text-6xl text-vibrant"
+            :class="titleLeading"
+          >
             {{ t('heroTitle') }} <span class="text-wheat">{{ t('heroHighlight') }}</span>
           </h1>
-          <p class="mt-6 text-lg leading-8 text-white/70">
+          <p 
+            class="mt-6 text-lg text-white/70"
+            :class="subLeading"
+          >
             {{ t('heroSub') }}
           </p>
           <div class="mt-10 flex items-center gap-x-6">
