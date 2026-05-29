@@ -8,7 +8,7 @@ const subLeading = computed(() => (locale.value === 'en' ? 'leading-8' : 'leadin
 <template>
   <div>
     <!-- Section 1: Hero (Dark) -->
-    <section v-reveal class="relative isolate overflow-hidden pt-6 sm:pt-10">
+    <section v-reveal class="relative isolate overflow-hidden pt-[100px] sm:pt-[140px]">
       <div class="mx-auto max-w-7xl px-6 pb-16 pt-10 sm:pb-20 lg:flex lg:items-center lg:px-8 lg:pt-16">
         <div class="mx-auto max-w-2xl flex-shrink-0 lg:mx-0 lg:max-w-xl">
           <div class="mt-12 sm:mt-16 lg:mt-0">
@@ -36,7 +36,7 @@ const subLeading = computed(() => (locale.value === 'en' ? 'leading-8' : 'leadin
           </p>
           <div class="mt-10 flex items-center gap-x-6">
             <NuxtLink
-              to="/check"
+              to="/services"
               class="glass-button-primary !px-8 !py-4 text-lg"
             >
               {{ t('cta') }}
@@ -94,7 +94,7 @@ const subLeading = computed(() => (locale.value === 'en' ? 'leading-8' : 'leadin
           </p>
           <div class="mt-10 flex justify-center gap-x-6">
             <NuxtLink
-              to="/check"
+              to="/services"
               class="glass-button-primary !px-12 !py-5 text-xl"
             >
               {{ t('cta') }}

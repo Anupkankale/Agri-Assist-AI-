@@ -19,7 +19,7 @@
         <p class="text-[10px] font-bold uppercase tracking-[0.25em] text-wheat">Resources</p>
         <div class="space-y-4 text-sm text-white/50 flex flex-col">
           <NuxtLink to="/" class="hover:text-wheat transition-colors">Home</NuxtLink>
-          <NuxtLink to="/check" class="hover:text-wheat transition-colors">Check Eligibility</NuxtLink>
+          <NuxtLink to="/services" class="hover:text-wheat transition-colors">Services</NuxtLink>
           <NuxtLink to="/advisory" class="hover:text-wheat transition-colors">Weather Advisory</NuxtLink>
           <NuxtLink to="/about" class="hover:text-wheat transition-colors">About</NuxtLink>
         </div>

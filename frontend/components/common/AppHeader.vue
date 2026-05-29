@@ -3,7 +3,7 @@ import { ref } from 'vue'
 
 const navigation = [
   { name: 'Home', to: '/' },
-  { name: 'Check Eligibility', to: '/check' },
+  { name: 'Services', to: '/services' },
   { name: 'Advisory', to: '/advisory' },
   { name: 'About', to: '/about' }
 ]
@@ -17,6 +17,46 @@ const languages = [
 ]
 
 const isMenuOpen = ref(false)
+const isVisible = ref(true)
+const isScrolled = ref(false)
+let lastScrollY = 0
+const THRESHOLD = 5 // px
+
+const handleScroll = () => {
+  if (process.client) {
+    const currentScrollY = window.scrollY
+    
+    // Always show at the very top
+    if (currentScrollY < 10) {
+      isVisible.value = true
+      isScrolled.value = false
+      return
+    }
+
+    isScrolled.value = true
+
+    // Only trigger if scroll distance is more than threshold
+    if (Math.abs(currentScrollY - lastScrollY) < THRESHOLD) return
+
+    if (currentScrollY > lastScrollY) {
+      // Scrolling down - hide header
+      isVisible.value = false
+    } else {
+      // Scrolling up - show header
+      isVisible.value = true
+    }
+    
+    lastScrollY = currentScrollY
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value
@@ -28,8 +68,18 @@ const closeMenu = () => {
 </script>
 
 <template>
-  <header class="sticky top-6 z-50 container-tight">
-    <div class="glass-card-thick flex items-center justify-between px-5 py-3 sm:px-8 sm:py-4">
+  <header 
+    class="fixed top-0 left-0 right-0 z-50 w-full transition-all duration-500 ease-apple-ease"
+    :class="[
+      isVisible ? 'translate-y-0 opacity-100' : '-translate-y-full opacity-0 pointer-events-none',
+      isScrolled ? 'pt-4' : 'pt-8'
+    ]"
+  >
+    <div class="container-tight">
+      <div 
+        class="glass-card-thick flex items-center justify-between px-5 py-3 sm:px-8 sm:py-4 transition-all duration-500"
+        :class="isScrolled ? 'mx-0 shadow-2xl' : 'mx-0'"
+      >
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center gap-3 group shrink-0" @click="closeMenu">
         <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 ring-1 ring-white/10 group-hover:bg-moss/40 group-hover:ring-moss/50 transition-all duration-500">
@@ -72,7 +122,7 @@ const closeMenu = () => {
         </div>
 
         <NuxtLink
-          to="/check"
+          to="/services"
           class="glass-button-primary !px-6 !py-2.5 text-[11px] uppercase tracking-widest"
         >
           Get Started
@@ -92,6 +142,7 @@ const closeMenu = () => {
           <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
         </svg>
       </button>
+    </div>
     </div>
 
     <!-- Mobile Menu Overlay -->
@@ -138,7 +189,7 @@ const closeMenu = () => {
           </div>
 
           <NuxtLink
-            to="/check"
+            to="/services"
             @click="closeMenu"
             class="glass-button-primary w-full text-center block !py-4 text-[13px] uppercase tracking-[0.2em]"
           >

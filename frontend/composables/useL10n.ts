@@ -9,7 +9,7 @@ export const useL10n = () => {
       heroTitle: "Find every government scheme you qualify for",
       heroHighlight: "in 60 seconds",
       heroSub: "AgriAssist AI checks 20+ central and state schemes for your crop, land size, and district. Powered by Advanced AI.",
-      cta: "Check my eligibility →",
+      cta: "Explore Services →",
       demo: "Watch demo",
       phase: "Phase 1 Live",
       news: "What's new",
@@ -78,14 +78,34 @@ export const useL10n = () => {
       tech2: "Grounded Accuracy",
       tech2Sub: "Verified answers from official PDFs.",
       tech3: "Scalable Stack",
-      tech3Sub: "Fast, responsive, and secure web platform."
+      tech3Sub: "Fast, responsive, and secure web platform.",
+
+      // Services Page
+      servTitle: "Agriculture Services",
+      servSub: "Empowering farmers with modern tools, financial aid, and expert training.",
+      servSchemeTitle: "Government Schemes",
+      servSchemeDesc: "Access 20+ central and state schemes tailored to your farm profile.",
+      servLoanTitle: "Agricultural Loans",
+      servLoanDesc: "Low-interest loans and financial support for small to large scale farming.",
+      servAutomationTitle: "Smart Automation",
+      servAutomationDesc: "Implement AI-driven irrigation and monitoring systems to save time.",
+      servMachineryTitle: "Modern Machinery",
+      servMachineryDesc: "Rent or buy advanced harvesters, tractors, and soil testing tools.",
+      servTrainingTitle: "Expert Training",
+      servTrainingDesc: "Certified workshops on new-age farming techniques and organic practices.",
+      servExportTitle: "Crop Export (Soyabean & Cotton)",
+      servExportDesc: "Facilitating bulk export opportunities for major crops like Soyabean and Cotton to global markets.",
+      servWeatherTitle: "Live AI Weather Forecasting",
+      servWeatherDesc: "Hyper-local, AI-driven weather insights to protect your crops from sudden climate changes.",
+      servPriceTitle: "Market Price Prediction",
+      servPriceDesc: "AI analysis of global trends to predict future price increases and identify the best time to sell your harvest."
     },
     mr: {
       // Hero
       heroTitle: "तुम्ही पात्र असलेल्या सर्व सरकारी योजना शोधा",
       heroHighlight: "६० सेकंदात",
       heroSub: "AgriAssist AI तुमच्या पिकासाठी, जमिनीच्या आकारासाठी आणि जिल्ह्यासाठी २०+ केंद्र आणि राज्य योजना तपासते. प्रगत AI द्वारे समर्थित.",
-      cta: "माझी पात्रता तपासा →",
+      cta: "सेवा पहा →",
       demo: "डेमो पहा",
       phase: "फेज १ लाईव्ह",
       news: "नवीन काय आहे",
@@ -154,14 +174,34 @@ export const useL10n = () => {
       tech2: "अचूकता",
       tech2Sub: "अधिकृत PDF मधून पडताळलेली उत्तरे.",
       tech3: "वेगवान प्लॅटफॉर्म",
-      tech3Sub: "वेगवान, सुरक्षित आणि आधुनिक वेब प्लॅटफॉर्म."
+      tech3Sub: "वेगवान, सुरक्षित आणि आधुनिक वेब प्लॅटफॉर्म.",
+
+      // Services Page
+      servTitle: "कृषी सेवा",
+      servSub: "आधुनिक साधने, आर्थिक मदत आणि तज्ज्ञांच्या प्रशिक्षणाद्वारे शेतकऱ्यांना सक्षम करणे.",
+      servSchemeTitle: "सरकारी योजना",
+      servSchemeDesc: "तुमच्या शेतीनुसार २०+ केंद्र आणि राज्य योजनांचा लाभ घ्या.",
+      servLoanTitle: "कृषी कर्ज",
+      servLoanDesc: "लहान ते मोठ्या शेतीसाठी कमी व्याजाचे कर्ज आणि आर्थिक सहाय्य.",
+      servAutomationTitle: "स्मार्ट ऑटोमेशन",
+      servAutomationDesc: "वेळ वाचवण्यासाठी AI-आधारित सिंचन आणि देखरेख प्रणाली लागू करा.",
+      servMachineryTitle: "आधुनिक यंत्रसामग्री",
+      servMachineryDesc: "प्रगत हार्वेस्टर, ट्रॅक्टर आणि माती परीक्षण साधने भाड्याने घ्या किंवा खरेदी करा.",
+      servTrainingTitle: "तज्ज्ञ प्रशिक्षण",
+      servTrainingDesc: "नवीन काळातील शेती तंत्र आणि सेंद्रिय शेतीवर प्रमाणित कार्यशाळा.",
+      servExportTitle: "पीक निर्यात (सोयाबीन आणि कापूस)",
+      servExportDesc: "सोयाबीन आणि कापूस यांसारख्या प्रमुख पिकांसाठी जागतिक बाजारपेठेत मोठ्या प्रमाणावर निर्यातीच्या संधी उपलब्ध करून देणे.",
+      servWeatherTitle: "थेट AI हवामान अंदाज",
+      servWeatherDesc: "हवामानातील अचानक होणाऱ्या बदलांपासून तुमच्या पिकांचे संरक्षण करण्यासाठी AI-आधारित हायपर-लोकल माहिती.",
+      servPriceTitle: "बाजारभाव अंदाज",
+      servPriceDesc: "भविष्यातील भाववाढीचा अंदाज घेण्यासाठी आणि तुमची पिके विकण्याची सर्वोत्तम वेळ ओळखण्यासाठी जागतिक कलूंचे AI विश्लेषण."
     },
     hi: {
       // Hero
       heroTitle: "उन सभी सरकारी योजनाओं को खोजें जिनके लिए आप पात्र हैं",
       heroHighlight: "६० सेकंड में",
       heroSub: "AgriAssist AI आपकी फसल, भूमि के आकार और जिले के लिए २०+ केंद्रीय और राज्य योजनाओं की जांच करता है। प्रगत AI द्वारा संचालित।",
-      cta: "मेरी पात्रता जांचें →",
+      cta: "सेवाएं देखें →",
       demo: "डेमो देखें",
       phase: "फेज १ लाइव",
       news: "नया क्या है",
@@ -230,7 +270,27 @@ export const useL10n = () => {
       tech2: "सटीकता",
       tech2Sub: "आधिकारिक PDF से सत्यापित उत्तर।",
       tech3: "स्केलेबल प्लेटफॉर्म",
-      tech3Sub: "तेज, सुरक्षित और आधुनिक वेब प्लेटफॉर्म।"
+      tech3Sub: "तेज, सुरक्षित और आधुनिक वेब प्लेटफॉर्म।",
+
+      // Services Page
+      servTitle: "कृषि सेवाएं",
+      servSub: "आधुनिक उपकरणों, वित्तीय सहायता और विशेषज्ञ प्रशिक्षण के साथ किसानों को सशक्त बनाना।",
+      servSchemeTitle: "सरकारी योजनाएं",
+      servSchemeDesc: "आपकी कृषि प्रोफ़ाइल के अनुसार २०+ केंद्रीय और राज्य योजनाओं तक पहुंचें।",
+      servLoanTitle: "कृषि ऋण",
+      servLoanDesc: "लघु से बड़े पैमाने की खेती के लिए कम ब्याज वाले ऋण और वित्तीय सहायता।",
+      servAutomationTitle: "स्मार्ट ऑटोमेशन",
+      servAutomationDesc: "समय बचाने के लिए AI-संचालित सिंचाई और निगरानी प्रणाली लागू करें।",
+      servMachineryTitle: "आधुनिक मशीनरी",
+      servMachineryDesc: "उन्नत हार्वेस्टर, ट्रैक्टर और मिट्टी परीक्षण उपकरण किराए पर लें या खरीदें।",
+      servTrainingTitle: "विशेषज्ञ प्रशिक्षण",
+      servTrainingDesc: "नई कृषि तकनीकों और जैविक प्रथाओं पर प्रमाणित कार्यशालाएं।",
+      servExportTitle: "फसल निर्यात (सोयाबीन और कपास)",
+      servExportDesc: "सोयाबीन और कपास जैसी प्रमुख फसलों के लिए वैश्विक बाजारों में थोक निर्यात के अवसर प्रदान करना।",
+      servWeatherTitle: "लाइव AI मौसम पूर्वानुमान",
+      servWeatherDesc: "मौसम के अचानक बदलाव से आपकी फसलों की रक्षा के लिए AI-आधारित हाइपर-लोकल जानकारी।",
+      servPriceTitle: "बाजार मूल्य पूर्वानुमान",
+      servPriceDesc: "भविष्य में कीमतों में वृद्धि का अनुमान लगाने और अपनी फसल बेचने का सबसे अच्छा समय पहचानने के लिए वैश्विक रुझानों का AI विश्लेषण।"
     }
   };
 
